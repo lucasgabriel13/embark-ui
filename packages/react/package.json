@@ -1,0 +1,28 @@
+{
+  "name": "@embark-ui/react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
+    "dev": "tsup src/index.tsx --format esm,cjs --dts --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@embark-ui/ts-config": "*",
+    "@types/react": "^18.2.21",
+    "@types/react-dom": "^18.2.7",
+    "@types/styled-components": "^5.1.26",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tsup": "^7.2.0",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "styled-components": "^6.0.7"
+  }
+}
